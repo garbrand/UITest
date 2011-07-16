@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>layout</title>
+	<style type="text/css" media="screen">
+		html * {
+			margin: 0; padding: 0;
+		}
+		
+		body {
+			font: normal normal 11px/20px 'Lucida Grande', arial, sans-serif;
+		}
+		
+		#viewport {
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 240px;
+			overflow: auto;
+		}
+		
+		#sidebar {
+			position: absolute;
+			top: 0; right: auto; bottom: 0; left: 0;
+			width: 239px;
+			border-right: 1px solid #919191;
+			background: #F2F2F2;
+			overflow: auto;
+		}
+	
+		#UITest h1,
+		#UITest h2 {
+			font: normal bold 11px/18px 'Lucida Grande';
+			padding-left: 10px;
+/*			background: #DDD; */
+			color: #676767;
+			border-top: 1px solid #EFEFEF;
+			border-bottom: 1px solid #AFAFAF;
+			text-shadow: 0 1px #EFEFEF;
+		}
+		
+		#UITest h2 {
+			font-weight: normal;
+		}
+		
+		#UITest h2 i,
+		#UITest h2 b {
+			font: inherit; text-align: center;
+			display: block;
+			float: right;
+			padding: 0 5px;
+		}
+		
+		#UITest h2 s {
+			text-decoration: none;
+			display: block;
+			float: left;
+			border: 3px solid transparent;
+			border-left: 6px solid #676767;
+			margin-top: 6px;
+			margin-right: 2px;
+		}
+		
+		#UITest .toolbar {
+			position: absolute;
+			top: auto; right: 0; bottom: auto; left: 0;
+			height: 19px;
+			font: normal normal 10px/18px 'Lucida Grande';
+			background: #B0B0B0; color: #333;
+			padding: 0 10px;
+		}
+		
+		#UITest .toolbar.top {
+			top: 0;
+			border-bottom: 1px solid #555;
+		}
+		
+		#UITest .toolbar.bottom {
+			bottom: 0;
+			border-top: 1px solid #555;
+		}
+		
+		#UITest .toolbar * {
+			cursor: pointer;
+		}
+		
+		#UITest .toolbar button {
+			background: #444; color: #eee;
+			padding: 0 5px;
+			margin-top: 2px;
+			height: 14px; line-height: 14px;
+			-webkit-border-radius: 7px;
+			border: 1px solid #000;
+			float: right;
+			font-weight: bold;
+		}
+		
+		#UITest .toolbar input {
+			margin-right: 4px;
+		}
+		
+		#UITest .toolbar label {
+			margin-right: 4px;
+		}
+		
+		#UITest .sourcelist {
+			position: absolute;
+			top: 20px; right: 0; bottom: 20px; left: 0;
+			overflow: auto;
+		}
+	</style>
+</head>
+
+<body id="UITest">
+	<div id="sidebar">
+		<div class="toolbar top">
+			<button>Run</button>
+		</div>
+		<div class="sourcelist">
+			<h1>Tests</h1>
+			<h2><s></s>Demo Test: Basic <b>&rarr;</b><i>4</i></h2>
+			<h2><s></s>Demo Test: Ajax Fail <b>&rarr;</b><i>11</i></h2>
+			<h2><s></s>Demo Test: Ajax Pass <b>&rarr;</b><i>7</i></h2>
+			<h2><s></s>Demo Test: Ajax Mockup <b>&rarr;</b><i>9</i></h2>
+			<h2><s></s>Demo Test: Fade Out/Fade In <b>&rarr;</b><i>3</i></h2>
+			<h2><s></s>Demo Test: Follow links <b>&rarr;</b><i>5</i></h2>
+		</div>
+		<div class="toolbar bottom">
+			<label><input type="checkbox" />Slow</label>
+			<label><input type="checkbox" />Step</label>
+			<label><input type="checkbox" />Continuous</label>
+		</div>
+	</div>
+	<div id="viewport">
+		
+	</div>
+</body>
+</html>
